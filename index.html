@@ -5,31 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechShop</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <header>
-        <div>
-            <span class="logo">Logo</span>
-            <h1>TechShop</h1>
-            <p>New Technologies</p>
+    <header class="header">
+        <div class="container-header">
+            <h1 class="title-header">TechShop</h1>
+            <div class="nav">
+                <nav class="nav-categories">
+                    <a class="nav-categories__item" href="#"><i class='bx bx-down-arrow' ></i>Categorias</a>
+                    <ul class="btnmenu-categories">
+                        <li><a href="#">categoria1</a></li>
+                        <li><a href="#">categoria2</a></li>
+                        <li><a href="#">categoria3</a></li>
+                        <li><a href="#">categoria4</a></li>
+                        <li><a href="#">categoria5</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-search">
+                    <input class="nav-search__btn" type="search" name="" id="" placeholder="Buscar">
+                    <i class='bx bx-search'></i>
+                </div>
+                <nav class="nav-other">
+                    <a class="nav-header__item" href="CarShop.html">Cart<i class='bx bx-cart'></i></a>
+                    <a class="nav-header__item" href="login.html">Mi cuenta <i class='bx bxs-user-account' ></i></a>
+                </nav>    
+            </div>
         </div>
-        <nav class="nav-header">
-            <a href="shop.html">Home</a>
-            <a href="#categorias">Categorias</a>
-            <a href="CarShop.html">Carrito de compras</a>
-            <a href="login.html">Mi cuenta</a>
-        </nav>
     </header>
     
-    <footer>
+    <!-- <footer>
         <nav class="nav-footer">
         <a href="Blog.html">Blog</a>
         <a href="about.html">about</a>
         <a href="contact.hmtl">Contacto</a>
         </nav>
         <div class="redes-sociales"></div>
-    </footer>
+    </footer> -->
 </body>
 </html>
