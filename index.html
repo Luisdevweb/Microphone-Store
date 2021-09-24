@@ -5,43 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechShop</title>
+    <!-- link stylesheeets boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="container-header">
-            <h1 class="title-header">TechShop</h1>
-            <div class="nav">
-                <nav class="nav-categories">
-                    <a class="nav-categories__item" href="#"><i class='bx bx-down-arrow' ></i>Categorias</a>
-                    <ul class="btnmenu-categories">
-                        <li><a href="#">categoria1</a></li>
-                        <li><a href="#">categoria2</a></li>
-                        <li><a href="#">categoria3</a></li>
-                        <li><a href="#">categoria4</a></li>
-                        <li><a href="#">categoria5</a></li>
-                    </ul>
+        <!-- header start -->
+
+            <div class="navbar-container">
+                <!-- navbar container start -->
+                <a class="logo"><i class='bx bx-tv'></i>TVshop</a>
+                <nav class="navbar">
+                    <a class="navbar__link" href="#home">Inicio</a>
+                    <a class="navbar__link" href="#category">categorias</a>
+                    <a class="navbar__link" href="#corporate_sales">Venta</a>
+                    <a class="navbar__link" href="#contact">contacto</a> 
                 </nav>
-                <div class="nav-search">
-                    <input class="nav-search__btn" type="search" name="" id="" placeholder="Buscar">
-                    <i class='bx bx-search'></i>
-                </div>
-                <nav class="nav-other">
-                    <a class="nav-header__item" href="CarShop.html">Cart<i class='bx bx-cart'></i></a>
-                    <a class="nav-header__item" href="login.html">Mi cuenta <i class='bx bxs-user-account' ></i></a>
-                </nav>    
+                <!-- menu start -->
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">categoria1</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">categoria2</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">categoria3</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">categoria4</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">categoria5</a>
+                    </li>
+                </ul>
+                <!--menu end-->
+                <form class="navbar__search-box">
+                    <input  type="search" class="search-box" id="search" placeholder="Buscar">
+                    <label title="buscar" for="search" class='bx bx-search'></label>
+                </form>
+                <nav class="navbar__icons">
+                    <a title="carrito de compras" class="navbar__link" href="Cart.html"><i class='bx bx-cart'></i></a>
+                    <a title="favoritos" class="navbar__link" href="favorite.html"><i class='bx bxs-heart'></i></a>
+                    <a title="iniciar sesion" class="navbar__link" href="login.html"><i class='bx bxs-user'></i></a>
+                </nav>
+                <!-- navbar container end   -->
             </div>
-        </div>
+
+        <!-- header end -->
     </header>
     
-    <!-- <footer>
-        <nav class="nav-footer">
-        <a href="Blog.html">Blog</a>
-        <a href="about.html">about</a>
-        <a href="contact.hmtl">Contacto</a>
-        </nav>
-        <div class="redes-sociales"></div>
-    </footer> -->
+   
 </body>
 </html>
