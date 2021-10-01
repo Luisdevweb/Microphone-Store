@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechShop</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <title>Technology Store</title>
     <!-- link stylesheeets boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
      <link rel="stylesheet" href="css/styles.css">
@@ -12,50 +13,33 @@
 <body>
     <header class="header">
         <!-- header start -->
-
-            <div class="navbar-container">
-                <!-- navbar container start -->
-                <a class="logo"><i class='bx bx-tv'></i>TVshop</a>
-                <nav class="navbar">
-                    <a class="navbar__link" href="#home">Inicio</a>
-                    <a class="navbar__link" href="#category">categorias</a>
-                    <a class="navbar__link" href="#corporate_sales">Venta</a>
-                    <a class="navbar__link" href="#contact">contacto</a> 
-                </nav>
-                <!-- menu start -->
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">categoria1</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">categoria2</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">categoria3</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">categoria4</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">categoria5</a>
-                    </li>
-                </ul>
-                <!--menu end-->
-                <form class="navbar__search-box">
-                    <input  type="search" class="search-box" id="search" placeholder="Buscar">
-                    <label title="buscar" for="search" class='bx bx-search'></label>
-                </form>
-                <nav class="navbar__icons">
-                    <a title="carrito de compras" class="navbar__link" href="Cart.html"><i class='bx bx-cart'></i></a>
-                    <a title="favoritos" class="navbar__link" href="favorite.html"><i class='bx bxs-heart'></i></a>
-                    <a title="iniciar sesion" class="navbar__link" href="login.html"><i class='bx bxs-user'></i></a>
-                </nav>
-                <!-- navbar container end   -->
-            </div>
-
+        <div class="logo">
+            <a href="#" class="logo__link"><i class='bx bx-tv'></i></a>
+        </div>
+        <h1 class="site-title">Technology Store</h1>
         <!-- header end -->
     </header>
-    
-   
+    <div class="navbar-container">
+        <!-- navbar container start -->
+        <div class="menu-icon">
+            <i class='bx bx-menu-alt-left'></i>
+        </div>
+        <nav class="navbar">
+            <a class="navbar__link" href="#home">Inicio</a>
+            <a class="navbar__link" href="#category">categorias</a>
+            <a class="navbar__link navbar__link--sales" href="#sales">Venta</a>
+            <a class="navbar__link navbar__link--contact" href="#contact">contacto</a> 
+        </nav>
+        <form class="navbar__search-box">
+            <input  type="search" class="search-box" id="search" placeholder="Buscar">
+            <label title="buscar" for="search" class='bx bx-search'></label>
+        </form>
+        <nav class="navbar__icons">
+            <a title="carrito de compras" class="navbar__link" href="Cart.html"><i class='bx bx-cart'></i></a>
+            <a title="favoritos" class="navbar__link" href="favorite.html"><i class='bx bxs-heart'></i></a>
+            <a title="iniciar sesion" class="navbar__link" href="login.html"><i class='bx bxs-user'></i></a>
+        </nav>
+        <!-- navbar container end   -->
+    </div>
 </body>
 </html>
