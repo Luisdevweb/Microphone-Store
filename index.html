@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>Technology Store</title>
@@ -11,35 +10,44 @@
      <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header flex">
         <!-- header start -->
-        <div class="logo">
+        <div class="logo header__logo">
             <a href="#" class="logo__link"><i class='bx bx-tv'></i></a>
         </div>
-        <h1 class="site-title">Technology Store</h1>
+        <h1 class="header__title">Technology Store</h1>
         <!-- header end -->
     </header>
-    <div class="navbar-container">
+    <nav class="nav flex">
         <!-- navbar container start -->
-        <div class="menu-icon">
+        <div class="menu">
             <i class='bx bx-menu-alt-left'></i>
         </div>
-        <nav class="navbar">
-            <a class="navbar__link" href="#home">Inicio</a>
-            <a class="navbar__link" href="#category">categorias</a>
-            <a class="navbar__link navbar__link--sales" href="#sales">Venta</a>
-            <a class="navbar__link navbar__link--contact" href="#contact">contacto</a> 
-        </nav>
-        <form class="navbar__search-box">
-            <input  type="search" class="search-box" id="search" placeholder="Buscar">
-            <label title="buscar" for="search" class='bx bx-search'></label>
-        </form>
-        <nav class="navbar__icons">
-            <a title="carrito de compras" class="navbar__link" href="Cart.html"><i class='bx bx-cart'></i></a>
-            <a title="favoritos" class="navbar__link" href="favorite.html"><i class='bx bxs-heart'></i></a>
-            <a title="iniciar sesion" class="navbar__link" href="login.html"><i class='bx bxs-user'></i></a>
-        </nav>
+        <div class="nav__inner">
+            <a class="nav__link" href="#home">Inicio</a>
+            <a class="nav__link" href="#category">categorias</a>
+            <a class="nav__link" href="#sales">Venta</a>
+            <a class="nav__link" href="#contact">contacto</a> 
+        </div> 
+        <div class="flex nav__content">
+            <form class="nav__finder flex">
+                <input type="search" class="nav__input" id="search" placeholder="Buscar">
+                <label title="buscar" for="search" class='nav__label'><i class="bx bx-search"></i></label>
+            </form>
+            <div class="nav__icons flex">
+                <a title="carrito de compras" class="nav__link" href="#">
+                    <i class='bx bx-cart'></i>
+                </a>
+                <a title="favoritos" class="nav__link" href="#">
+                    <i class='bx bxs-heart'></i>
+                </a>
+                <a title="iniciar sesion" class="nav__link" href="#">
+                    <i class='bx bxs-user'></i>
+                </a>
+            </div>
+        </div>   
+       
         <!-- navbar container end   -->
-    </div>
+    </nav>
 </body>
 </html>
