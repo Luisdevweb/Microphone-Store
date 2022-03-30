@@ -26,21 +26,41 @@
     </header>
 
     <div class="navbar container">
-      <div class="menu">
+      <nav class="menu">
         <a class="menu__link" href="#home">Inicio</a>
         <a class="menu__link" href="#category">categorias</a>
         <a class="menu__link" href="#sales">Venta</a>
         <a class="menu__link" href="#contact">contacto</a>
-      </div>
+      </nav>
 
       <nav class="navbar__items">
         <a class="menu-icon">
           <i title="menu" class="bx bx-menu-alt-left"></i>
         </a>
-        <div>
-          <a title="carrito de compras" class="navbar__link" href="#">
-            <i class="bx bx-cart"></i>
-          </a>
+        <div class="navbar__items">
+          <div class="cart-container">
+            <a title="carrito de compras" class="navbar__link" href="#">
+              <i class="bx bx-cart"></i>
+            </a>
+            <div id="cart-list" class="cart">
+              <div class="cart__header">
+                <ul class="cart__list">
+                  <li class="cart__item">Imagen</li>
+                  <li class="cart__item">Nombre</li>
+                  <li class="cart__item">Precio</li>
+                  <li class="cart__item">Cantidad</li>
+                  <li class="cart__item"></li>
+                </ul>
+              </div>
+              <div class="cart__body"></div>
+              <div class="cart__footer">
+                <a href="#" id="cleaned" class="button button--clean"
+                  >Vaciar Todo</a
+                >
+              </div>
+            </div>
+          </div>
+
           <a title="favoritos" class="navbar__link" href="#">
             <i class="bx bxs-heart"></i>
           </a>
@@ -72,20 +92,20 @@
 
     <section class="bar">
       <div class="container">
-        <div class="row">
-          <div class="bar__item">
+        <ul class="row">
+          <li class="bar__item">
             <div class="bar__icon"><i class="bx bxs-lock"></i></div>
             <p class="bar__text">compras seguras<span>(SSL)</span></p>
-          </div>
-          <div class="bar__item">
+          </li>
+          <li class="bar__item">
             <div class="bar__icon"><i class="bx bx-certification"></i></div>
             <p class="bar__text">productos garantizados</p>
-          </div>
-          <div class="bar__item">
+          </li>
+          <li class="bar__item">
             <div class="bar__icon"><i class="bx bxs-truck"></i></div>
             <p class="bar__text">entrega a casa en 24 horas</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
