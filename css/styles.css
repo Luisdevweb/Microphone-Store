@@ -72,10 +72,10 @@ body {
   margin-bottom: 2em;
 }
 .logo {
-  width: 48px;
-  margin-right: 1em;
+  width: 62px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .logo__link {
   border: 2px solid rgba(231, 230, 240, 0.7);
@@ -121,7 +121,8 @@ body {
   position: relative;
 }
 .cart {
-  width: 420px;
+  display: none;
+  min-width: 480px;
   position: absolute;
   top: 2.8em;
   left: -10em;
@@ -248,7 +249,7 @@ body {
 }
 
 /****************/
-.bar {
+.benefits {
   height: 20vh;
   background-image: linear-gradient(
     to right,
@@ -258,39 +259,39 @@ body {
   color: #fff;
   padding: 0.5em 0;
 }
-.bar__item {
+.benefits__item {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: space-between;
 }
-.bar__icon {
+.benefits__icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.bar__text {
+.benefits__text {
   width: 200px;
   text-transform: capitalize;
 }
 @media screen and (min-width: 1024px) {
-  .bar {
+  .benefits {
     height: 10vh;
   }
   .row {
     display: flex;
     align-items: center;
   }
-  .bar__icon {
+  .benefits__icon {
     margin-right: 0.2em;
     font-size: 1.5rem;
   }
-  .bar__item {
+  .benefits__item {
     justify-content: center;
     width: 400px;
   }
-  .bar__text {
+  .benefits__text {
     width: 300px;
     font-size: 1.2rem;
   }
@@ -369,12 +370,13 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-color);
+  text-decoration: line-through solid rgb(46, 8, 8);
 }
-.product__price span {
+.product__discount {
   display: inline-block;
   font-weight: 400;
-  text-decoration: line-through solid rgb(46, 8, 8);
-  margin-right: 1em;
+  text-decoration: none;
+  margin-left: 1em;
 }
 /***************************/
 

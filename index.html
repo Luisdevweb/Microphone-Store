@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="./js/index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -25,7 +26,7 @@
       <h1 class="header__title">Microphone Store</h1>
     </header>
 
-    <div class="navbar container">
+    <div class="navbar">
       <nav class="menu">
         <a class="menu__link" href="#home">Inicio</a>
         <a class="menu__link" href="#category">categorias</a>
@@ -42,7 +43,7 @@
             <a title="carrito de compras" class="navbar__link" href="#">
               <i class="bx bx-cart"></i>
             </a>
-            <div id="cart-list" class="cart">
+            <div id="cart" class="cart">
               <div class="cart__header">
                 <ul class="cart__list">
                   <li class="cart__item">Imagen</li>
@@ -52,9 +53,9 @@
                   <li class="cart__item"></li>
                 </ul>
               </div>
-              <div class="cart__body"></div>
+              <div class="cart__body" id="cart-body"></div>
               <div class="cart__footer">
-                <a href="#" id="cleaned" class="button button--clean"
+                <a href="#" id="button-clean" class="button button--clean"
                   >Vaciar Todo</a
                 >
               </div>
@@ -90,29 +91,31 @@
       </div>
     </section>
 
-    <section class="bar">
+    <section class="benefits">
       <div class="container">
         <ul class="row">
-          <li class="bar__item">
-            <div class="bar__icon"><i class="bx bxs-lock"></i></div>
-            <p class="bar__text">compras seguras<span>(SSL)</span></p>
+          <li class="benefits__item">
+            <div class="benefits__icon"><i class="bx bxs-lock"></i></div>
+            <p class="benefits__text">compras seguras<span>(SSL)</span></p>
           </li>
-          <li class="bar__item">
-            <div class="bar__icon"><i class="bx bx-certification"></i></div>
-            <p class="bar__text">productos garantizados</p>
+          <li class="benefits__item">
+            <div class="benefits__icon">
+              <i class="bx bx-certification"></i>
+            </div>
+            <p class="benefits__text">productos garantizados</p>
           </li>
-          <li class="bar__item">
-            <div class="bar__icon"><i class="bx bxs-truck"></i></div>
-            <p class="bar__text">entrega a casa en 24 horas</p>
+          <li class="benefits__item">
+            <div class="benefits__icon"><i class="bx bxs-truck"></i></div>
+            <p class="benefits__text">entrega a casa en 24 horas</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <main class="products">
+    <main class="products" id="product-list">
       <h2 class="products__title">nuestros productos</h2>
       <div class="products__inner container">
-        <article class="product">
+        <article class="product" data-id="1">
           <div class="product__content">
             <img
               class="product__image"
@@ -127,9 +130,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="2">
           <div class="product__content">
             <img
               class="product__image"
@@ -144,9 +149,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="3">
           <div class="product__content">
             <img
               class="product__image"
@@ -161,9 +168,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="4">
           <div class="product__content">
             <img
               class="product__image"
@@ -178,9 +187,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="5">
           <div class="product__content">
             <img
               class="product__image"
@@ -195,9 +206,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="6">
           <div class="product__content">
             <img
               class="product__image"
@@ -212,9 +225,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="7">
           <div class="product__content">
             <img
               class="product__image"
@@ -229,9 +244,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="8">
           <div class="product__content">
             <img
               class="product__image"
@@ -246,9 +263,11 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
-        <article class="product">
+        <article class="product" data-id="9">
           <div class="product__content">
             <img
               class="product__image"
@@ -263,7 +282,9 @@
             </div>
           </div>
           <h3 class="product__name">Microphone</h3>
-          <p class="product__price"><span>$250</span>$200</p>
+          <p class="product__price">
+            $250 <span class="product__discount">$100</span>
+          </p>
         </article>
       </div>
     </main>
