@@ -3,6 +3,7 @@
   --text-color: hsl(0, 10%, 14%);
   --bg-color: hsl(0, 0%, 20%);
   --white: hsl(0, 0%, 100%);
+  --lightgray: rgb(196, 191, 191);
   --icon-color: hsl(0, 0%, 0%);
   --border-color: hsl(0, 16%, 26%);
 }
@@ -130,13 +131,18 @@ body {
   z-index: 2;
   padding: 1em;
 }
+.cart--show {
+  display: block;
+}
 .cart__header {
-  background-color: var(--bg-color);
+  background-color: var(--lightgray);
+  color: var(--white);
 }
 .cart__list {
   padding-left: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 0.4em;
   border-bottom: 2px solid #333;
 }
@@ -144,11 +150,9 @@ body {
   display: inline-block;
   width: 100%;
   text-align: center;
-  color: var(--white);
+  color: var(--text-color);
 }
 .cart__body {
-  padding-top: 1em;
-  background-color: var(--bg-color);
   margin-bottom: 1em;
 }
 .cart__footer {
