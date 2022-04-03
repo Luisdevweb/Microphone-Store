@@ -13,6 +13,13 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="./js/index.js"></script>
   </head>
@@ -90,7 +97,6 @@
         </div>
       </div>
     </section>
-
     <section class="benefits">
       <div class="container">
         <ul class="row">
@@ -106,12 +112,45 @@
           </li>
           <li class="benefits__item">
             <div class="benefits__icon"><i class="bx bxs-truck"></i></div>
-            <p class="benefits__text">entrega a casa en 24 horas</p>
+            <p class="benefits__text">entrega dentro de 24hrs</p>
           </li>
         </ul>
       </div>
     </section>
-
+    <section class="popular-list">
+      <article class="popular">
+        <div class="container popular__inner">
+          <picture class="image-container">
+            <source
+              sizes="1920w"
+              srcset="assets/images/product-popular.avif"
+              type="image/avif"
+            />
+            <source
+              sizes="1920w"
+              srcset="assets/images/product-popular.webp"
+              type="image/webp"
+            />
+            <img
+              class="popular__image"
+              src="assets/images/product-popular.jpg"
+              alt="product popular"
+              width="500"
+              height="500"
+            />
+          </picture>
+          <div class="content popular__content">
+            <h2 class="content__title">Audifono + Microfono Pro</h2>
+            <p class="content__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              itaque, ullam perspiciatis repellat mollitia accusantium nulla
+              error adipisci quos.
+            </p>
+            <p class="price">oferta <span class="price__offer">$300</span></p>
+          </div>
+        </div>
+      </article>
+    </section>
     <main class="products" id="product-list">
       <h2 class="products__title">nuestros productos</h2>
       <div class="products__inner container">
