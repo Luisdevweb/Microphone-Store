@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/assets/microphone-24.png"
-      type="image/png"
-    />
+    <link rel="icon" href="./assets/microphone-24.png" type="image/png" />
     <title>Microphone Store</title>
     <link
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
@@ -22,6 +18,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/menu.js"></script>
   </head>
   <body>
     <header class="header">
@@ -34,15 +31,46 @@
     </header>
 
     <div class="navbar">
-      <nav class="menu">
-        <a class="menu__link" href="#home">Inicio</a>
-        <a class="menu__link" href="#category">categorias</a>
-        <a class="menu__link" href="#sales">Venta</a>
-        <a class="menu__link" href="#contact">contacto</a>
+      <nav class="menu" id="menu">
+        <a class="menu__link" href="#home">Home</a>
+        <a class="menu__link" href="#brand">Brands</a>
+        <a class="menu__link" href="#sales">Sales</a>
+        <a class="menu__link" href="#contact">Contact</a>
+      </nav>
+      <nav class="menu-mobile" id="menu-mobile">
+        <i class="bx bx-x"></i>
+        <ul class="menu-mobile__list">
+          <h2 class="menu-mobile__title">
+            <i class="bx bxs-microphone"></i>Microphone Store
+          </h2>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#home">Home</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#brand">Brands</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#sales">Sales</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#contact">Contact</a>
+          </li>
+          <div class="menu-mobile__box">
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Login</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Stores</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a class="menu-mobile__link" href="#">Exchanges and Refunds</a>
+            </li>
+          </div>
+        </ul>
       </nav>
 
       <nav class="navbar__items">
-        <a class="menu-icon">
+        <a class="menu-icon" id="menu-icon">
           <i title="menu" class="bx bx-menu-alt-left"></i>
         </a>
         <div class="navbar__items">
@@ -51,15 +79,6 @@
               <i class="bx bx-cart"></i>
             </a>
             <div id="cart" class="cart">
-              <div class="cart__header">
-                <ul class="cart__list">
-                  <li class="cart__item">Imagen</li>
-                  <li class="cart__item">Nombre</li>
-                  <li class="cart__item">Precio</li>
-                  <li class="cart__item">Cantidad</li>
-                  <li class="cart__item"></li>
-                </ul>
-              </div>
               <div class="cart__body" id="cart-body"></div>
               <div class="cart__footer">
                 <a href="#" id="button-clean" class="button button--clean"
@@ -78,7 +97,7 @@
 
     <section class="hero">
       <div class="hero__header">
-        <h2 class="hero__title">Haz que tu voz se escuche en el mundo</h2>
+        <h2 class="hero__title">Haz que tu voz se escuche en todo el mundo</h2>
       </div>
       <div class="hero__content">
         <p class="hero__text">Consigue tu Microfono ahora</p>
@@ -354,7 +373,8 @@
         </ul>
       </div>
       <div class="copyright">
-        &copy;2022.Microphone Store.Created by <span>Luismac09</span>
+        &copy;2022.Microphone Store.Created by
+        <span class="copyright__author">Luismac09</span>
       </div>
     </footer>
   </body>
