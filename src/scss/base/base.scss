@@ -1,0 +1,13 @@
+@use '../../scss/abstracts/variables.scss' as var;
+@use 'sass:map';
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: map.get($map: var.$fonts, $key: font1);
+}
+
+body {
+    font-family: map.get($map: var.$fonts, $key: font2);
+}

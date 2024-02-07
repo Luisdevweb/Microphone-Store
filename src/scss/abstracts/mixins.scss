@@ -1,0 +1,23 @@
+@use './variables.scss' as var;
+@use 'sass:map';
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@mixin responsive($term) {
+    @if map-has-key(var.$breakpoints, $term) {
+        $breakpoint: map.get(var.$breakpoints, $term);
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    } @else {
+        @media screen and (min-width: $term) {
+            @content;
+        }
+    }
+}
